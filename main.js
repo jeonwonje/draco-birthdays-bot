@@ -2,6 +2,7 @@ import TelegramBot from 'node-telegram-bot-api';
 import { parse } from 'csv-parse';
 import fs from 'fs';
 import { CronJob } from 'cron';
+import 'dotenv/config'
 
 const bot = new TelegramBot(process.env.BOT_TOKEN, { polling: true });
 
